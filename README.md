@@ -75,6 +75,7 @@ youtube-video-summarizer/
 │   └── index.html
 ├── static/
 │   └── style.css
+│   └── script.js
 ├── ffmpeg/
 │   └── bin/
 ├── requirements.txt
