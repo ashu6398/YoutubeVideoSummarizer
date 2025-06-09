@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LLM Video Summarizer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="toast" id="toast">📢 Toast message</div>
+
+  <div class="container">
+    <h1>🎥 LLM YouTube Video Summarizer</h1>
+    <form method="post" id="summaryForm">
+      <input type="text" name="youtube_url" placeholder="Paste YouTube URL..." required>
+      <button type="submit">Summarize</button>
+    </form>
+
+    <div id="loader" class="waveform hidden">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <button id="stopButton" class="hidden">🛑 Stop</button>
+
+    {% if summary %}
+      <div class="summary-box">
+        <h2>📝 Summary:</h2>
+        <p>{{ summary }}</p>
+      </div>
+      <script>
+        showToast("✅ Summary loaded successfully!");
+      </script>
+    {% endif %}
+  </div>
+  <script src="/static/script.js" defer></script>
+</body>
+</html>
