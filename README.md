@@ -18,7 +18,8 @@ This project automates the process of downloading the video's audio, transcribin
 
 ## 🖼️ Final Output
 
-![App Screenshot](screenshot.png)
+
+![image](https://github.com/user-attachments/assets/08e7808a-80fe-40de-a1a0-3ce5d8819c50)
 
 ---
 
@@ -58,7 +59,7 @@ GOOGLE_API_KEY=your_google_gemini_api_key
 ## ▶️ Run the App
 
 ```bash
-uvicorn app:app --reload
+python.exe app.py
 ```
 
 Then open your browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
